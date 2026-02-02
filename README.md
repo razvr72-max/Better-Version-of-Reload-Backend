@@ -13,15 +13,13 @@ This version is pre-configured for localhost development and testing.
 ### 📋 Prerequisites
 1. **Node.js** (v16 or higher) - [Download Here](https://nodejs.org/en/)
 2. **MongoDB** - [Download Here](https://www.mongodb.com/try/download/community)
-3. **Fortnite Game Client** (Chapter 1 Season 9 recommended)
-4. **Fiddler** or similar proxy tool - [Download Here](https://www.telerik.com/download/fiddler)
 
 ### 🔧 Configuration Overview
 
 This localhost version uses the following ports:
 - **Backend Port**: `3551` (Main API server)
-- **Matchmaker Port**: `19211` (Matchmaking service)
-- **Game Server Port**: `19150` (Actual game servers)
+- **Matchmaker Port**: `80` (Matchmaking service)
+- **Game Server Port**: `7777` (Actual game servers)
 - **Website Port**: `100` (Web interface, if enabled)
 - **Caldera Service Port**: `5000` (For newer Fortnite versions)
 
@@ -100,7 +98,7 @@ class Handlers
 ### 6. Create Your First Account
 1. Join your Discord server with the bot
 2. Use the command: `/create {email} {username} {password}`
-3. Or use `/exchange-code` to get a login code
+3. Create a Host Account as well to be able to host games
 
 ### 7. Launch Fortnite
 1. Start Fortnite with your preferred launcher
@@ -113,11 +111,11 @@ class Handlers
 ### Core Features
 - ✅ **Account System**: Create and manage accounts
 - ✅ **Locker Management**: Full locker customization
-- ✅ **Item Shop**: Auto-rotating item shop with Chapter 1-10 cosmetics
-- ✅ **Battle Pass**: Chapter 1 Season 9 battle pass (free)
+- ✅ **Item Shop**: Auto-rotating item shop with Chapter 1-4 cosmetics
+- ✅ **Battle Pass**: Chapter 1 Season 2 - Chapter 3 Season 2
 - ✅ **Friends System**: Add/remove friends, chat functionality
 - ✅ **Matchmaking**: Solo, Duo, and Tournament playlists
-- ✅ **Tournaments**: Solo tournament system with rewards
+- ✅ **Tournaments**: Solo tournament system with rewards (may work in the future)
 
 ### Advanced Features
 - ✅ **Discord Bot Integration**: Full account management via Discord
@@ -134,12 +132,12 @@ class Handlers
 ```json
 {
   "port": 3551,                    // Backend main port
-  "matchmakerIP": "127.0.0.1:19211", // Matchmaker service
+  "matchmakerIP": "127.0.0.1:80", // Matchmaker service
   "gameServerIP": [                // Game servers
-    "127.0.0.1:19150:playlist_showdownalt_solo",
-    "127.0.0.1:19150:playlist_defaultsolo",
-    "127.0.0.1:19150:Playlist_ShowdownTournament_Solo",
-    "127.0.0.1:19150:Playlist_ShowdownTournament_Duo"
+    "127.0.0.1:7777:playlist_showdownalt_solo",
+    "127.0.0.1:7777:playlist_defaultsolo",
+    "127.0.0.1:7777:Playlist_ShowdownTournament_Solo",
+    "127.0.0.1:7777:Playlist_ShowdownTournament_Duo"
   ],
   "battlepassseason": 9,           // Current season
   "joinable_version": "9.10",      // Client version
@@ -244,8 +242,8 @@ All services are configured for `127.0.0.1` (localhost)
 
 ### Port Forwarding (if needed):
 - **3551**: Backend API
-- **19211**: Matchmaker
-- **19150**: Game servers
+- **80**: Matchmaker
+- **7777**: Game servers
 - **100**: Website (if enabled)
 - **5000**: Caldera service (if enabled)
 
@@ -283,10 +281,9 @@ All services are configured for `127.0.0.1` (localhost)
 ## 📞 Support
 
 ### Getting Help:
-- **Discord**: Contact `burlone413` for support
+- **Discord**: Contact `@astro.dev0` for support
 - **GitHub**: Create issues for bug reports
 - **Documentation**: Check this README first
-- **Community**: Join Reload Backend community
 
 ### Reporting Bugs:
 1. **Include error logs**
@@ -296,16 +293,5 @@ All services are configured for `127.0.0.1` (localhost)
 
 ---
 
-## 📄 License
+## Credits to burlone even though he didnt help me with this but he made most of the stuff thats in this backend
 
-This **project/backend** is licensed under the **BSD 3-Clause License.**
-
-## 🙏 Credits
-
-Credits have been moved to the **Contributors** section of GitHub. If I forgot to include someone, write to **burlone413** on Discord
-
----
-
-**Reload Backend** is under continuous development and there could be errors of any kind. This localhost version is pre-configured for easy setup and testing. For production use, please ensure proper security measures are in place.
-
-**Happy Gaming! 🎮**
