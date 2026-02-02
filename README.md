@@ -113,7 +113,7 @@ class Handlers
 - ✅ **Item Shop**: Auto-rotating item shop with Chapter 1-4 cosmetics
 - ✅ **Battle Pass**: Chapter 1 Season 2 - Chapter 3 Season 2
 - ✅ **Friends System**: Add/remove friends, chat functionality
-- ✅ **Matchmaking**: Solo, Duo, and Tournament playlists
+- ✅ **Matchmaking**: Improved matchmaker, im not gonna show how to make it fully work
 - ✅ **Tournaments**: Solo tournament system with rewards (may work in the future)
 
 ### Advanced Features
