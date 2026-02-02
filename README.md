@@ -1,17 +1,16 @@
-# Reload Backend - Localhost Setup Guide
-
+# Reload Backend - Setup Guide
 ![Imgur](https://i.imgur.com/ImIwpRm.png)
 
 Reload Backend is a universal Fortnite private server backend written in [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 Created by [Burlone](https://github.com/burlone0), This is a modded backend, all main backend credits to [Lawin](https://github.com/Lawin0129)
 
-## 🚀 Quick Setup for Localhost (127.0.0.1)
+## 🚀 Quick Setup 
 
-This version is pre-configured for localhost development and testing.
+
 
 ### 📋 Prerequisites
-1. **Node.js** (v16 or higher) - [Download Here](https://nodejs.org/en/)
+1. **Node.js** (v20-24) - [Download Here](https://nodejs.org/en/)
 2. **MongoDB** - [Download Here](https://www.mongodb.com/try/download/community)
 
 ### 🔧 Configuration Overview
@@ -224,8 +223,8 @@ If you experience port conflicts, you can change them in `config.json`:
 ```json
 {
   "port": 3551,              // Change backend port
-  "matchmakerIP": "127.0.0.1:19212", // Change matchmaker port
-  "gameServerIP": ["127.0.0.1:19151:..."] // Change game server port
+  "matchmakerIP": "127.0.0.1:80", // Change matchmaker port
+  "gameServerIP": ["127.0.0.1:7777:..."] // Change game server port
 }
 ```
 
@@ -256,11 +255,7 @@ All services are configured for `127.0.0.1` (localhost)
 4. **Enable debug logs only when needed**
 5. **Regular database cleanup**
 
-### Resource Usage:
-- **RAM**: ~200-500MB (varies with player count)
-- **CPU**: Low usage for <50 players
-- **Disk**: ~2GB for full installation
-- **Network**: ~1MB/s per 10 active players
+### When you Create an account you get a free cosmetics, feel free to change that
 
 ## 🔄 Updates and Maintenance
 
