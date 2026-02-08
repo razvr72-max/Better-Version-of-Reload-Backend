@@ -17,3 +17,9 @@
 - library page which will have build import thing, able to launch fortnite
 - news page
 - Possibly a auto updater 
+
+
+# Credits
+
+- Credits to pablo for the launcher and credits to ghost for stuff hes implemented to pablos launcher (which i think was removed by him but idk)
+- Credits to burlone0 and benzi0 for stuff that needed to be addeed, and lastly credits to ghostcubert for adding arena and getting arena points to work
